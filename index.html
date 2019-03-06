@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<!-- This meta stuff doesn't get read or appear
+	in the browser, it is just machine parsible info-->
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1">
+	<meta name="author" content="Jake Black">
+
+	<title>Growing Pumpkins | Welcome</title>
+	
+	<!--Here we're linking our CSS stylesheet-->
+	<link rel="stylesheet" href="./css/testcss.css">
+	
+	
+</head>
+
+<body>
+
+<a id="top"></a><!--Here I've added an anchor to which I can add a 'back to top' link in the footer-->
+
+	<!--Header represents a container for introductory content or a set of nav links, usually contains headings or a logo-->
+	<header>
+		<!--We use a div here because we'll be using the container again at the bottom of the page-->
+		<!--We'll be using this multiple times to consolidate everything and push it too a certain width etc-->
+		<div class="container">
+			
+			<div id="branding"> <!--We use an ID here because the branding will only appear once-->
+				<h1><span class="highlight">Growing</span>Pumpkins</h1> <!--Span is inline, a div would make it growing go on its own line which we don't want-->
+			</div>
+				
+			
+				<nav> <!--This nav tag is just a container for a series of navigation links-->
+					<ul class="topnav">
+						<li class="icon"><a href="#">&#9776;&nbsp;MENU</a></li>
+						<li class="hide"><a href="index.html">Home</a></li>
+						<li class="hide"><a href="cultivation.html">Cultivation</a></li>
+						<li class="hide"><a href="harvesting.html">Harvesting</a></li>
+						<li class="hide"><a href="preparation.html">Preparation</a></li>
+						<li class="hide"><a href="contact.html">Get in Touch</a></li>
+					</ul>
+				
+					
+				
+					</nav>
+		</div>
+	
+	</header>
+	
+	<!--Section defines sections such as chapters, headers, footers, or any section in a document.-->
+	<section id="showcase">
+		<div class="showcasetext">
+			
+				<h2>Pumpkin Patch From Start to Finish</h2>
+				<p>Growing your own pumpkins can be easy and rewarding</p>
+		
+		</div>
+	
+	</section>
+	
+	<article id="newsletter">
+		<div class="container">
+			<h2>Subscribe to my Newsletter</h2>
+			<form> <!--This defines a form that is used to collect user input,
+						we can input many types of info, depending on what we set the info type as
+						in this case email, but we could just use text-->
+				<input type="email" placeholder="Enter Email..."/>
+				<!--This defines a button for submitting the form data, this usually goes to a handler in php-->
+				<button type="submit" class="button_1">Subscribe</button>
+			</form>
+		</div>
+	</article>
+	
+	<!--ID because this set of boxes will only appear once-->
+	<section id="boxes">
+		<!--Once again, we use a class because these are not unique, there are three of them-->
+		
+			<div class="box">
+				<figure>
+				<img src="./images/cultivation.png" alt="Cultivation">
+				
+				<figcaption>Fig.1 - Digging a patch.</figcaption>
+				
+				</figure>
+				<h3>Cultivation</h3>
+				<p>Visit our cultivation section to learn more about digging and caring for your own pumpkin patch.</p>
+				
+			</div>
+			
+			
+			<div class="box">
+			<figure>
+			<img src="./images/harvesting.png" alt="Harvesting">
+				
+				<figcaption>Fig.2 - Harvesting pumpkins.</figcaption>
+				
+				</figure>
+				<h3>Harvesting</h3>
+				<p>Visit our harvesting section to learn best practice for cutting your pumpkins out.</p>
+				
+			</div>
+			
+			
+			<div class="box">
+			<figure>
+			<img src="./images/preparation.png" alt="Preparation">
+				
+				<figcaption>Fig.3 - Pumpkin soup.</figcaption>
+				
+				</figure>
+				<h3>Preparation</h3>
+				<p>There are a plethora of delicious recipes you can try with your home-grown pumpkins.</p>
+				
+			</div>
+		
+	
+	</section>
+	
+	<footer>
+	
+	<p>Jake Black, Copright &copy; 2019</p>
+	<a href="#top">Return to top of page</a>
+	<!--Here I have linked back to the anchor at the top of my page, this will allow the user to return to the top from the bottom of the page-->
+	
+	</footer>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><!--Linkking jquery for burger menu-->
+<script src="./javascript/responsive.js"></script><!--Linking to external javascript file-->
+<!--We place these links at the end of the file as it helps the page to load faster-->
+
+
+</body>
+</html>

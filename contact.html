@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<!-- This meta stuff doesn't get read or appear
+	in the browser, it is just machine parsible info-->
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1">
+	<meta name="author" content="Jake Black">
+
+	<title>Growing Pumpkins | Contact</title>
+	
+	<!--Here we're linking our CSS stylesheet-->
+	<link rel="stylesheet" href="./css/testcss.css">
+	
+	
+</head>
+
+<body>
+<div id="page-container">
+	<div id="content-wrap">
+
+
+<a id="top"></a><!--Here I've added an anchor to which I can add a 'back to top' link in the footer-->
+
+	<!--Header represents a container for introductory content or a set of nav links, usually contains headings or a logo-->
+	<header>
+		<!--We use a div here because we'll be using the container again at the bottom of the page-->
+		<!--We'll be using this multiple times to consolidate everything and push it too a certain width etc-->
+		<div class="container">
+			
+			<div id="branding"> <!--We use an ID here because the branding will only appear once-->
+				<h1><span class="highlight">Growing</span>Pumpkins</h1> <!--Span is inline, a div would make it growing go on its own line which we don't want-->
+			</div>
+				
+			
+				<nav> <!--This nav tag is just a container for a series of navigation links-->
+					<ul class="topnav">
+						<li class="icon"><a href="#">&#9776;&nbsp;MENU</a></li>
+						<li class="hide"><a href="index.html">Home</a></li>
+						<li class="hide"><a href="cultivation.html">Cultivation</a></li>
+						<li class="hide"><a href="harvesting.html">Harvesting</a></li>
+						<li class="hide"><a href="preparation.html">Preparation</a></li>
+						<li class="hide"><a href="contact.html">Get in Touch</a></li>
+					</ul>
+				
+					
+				
+					</nav>
+		</div>
+	
+	</header>
+	
+<body>
+
+<h1 class="formheader">Want to get in touch?</h1>
+
+<div class="pagecontain">
+
+<div id="form">
+
+
+<form method="post" action"somescript.php" autocomplete="on">
+<!--NOTE This script won't work as it does not exist -->
+
+
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<div class="inputs">
+
+<div class="input">
+
+	<input type="text" name"firstname" id="firstname_id" class="txt" placeholder="First name">
+
+</div>
+	
+	<div class="forminput">
+
+	<input type="text" name="surname" id="surname_id" class="txt" placeholder="Surname">
+
+	</div>
+
+	<div class="forminput">
+	
+	<input type="email" name="email" id="email_id" class="txt" placeholder="Email">
+	
+	</div>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Address Details</legend>
+
+
+
+
+	<input type="text" name"address1" id="address1_id" class="txt" placeholder="Address 1">
+	
+
+
+
+
+<input type="text" name"address2" id"address2_id" class="txt" placeholder="Address 2">
+
+
+
+
+
+<input type="text" name="city" id"city_id" class="txt" placeholder="City">
+
+
+
+
+
+<input type="text" name"postcode" id"postcode_id" class="txt" placeholder="Postcode">
+
+
+
+</fieldset>
+
+</form>
+
+<div>
+<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"
+class="btn"></div>
+
+</div>
+
+</div>
+	
+<div class="contactmore">
+	
+<div class="contactelement">
+	<h1>Call</h1>
+		<p>085 111 1111</p>
+		<p>(01) 111 1111</p>
+	</div>
+
+<div class="contactelement">		
+	<h1>Email</h1>
+		<p>info@growingpumpkins.ie</p>
+	</div>
+	
+
+	<h1>Visit</h1>
+		<p>Pumpkin Co</p>
+		<p>	North Circular Road</p>
+			<p>Swan's Nest</p>
+			<p>Ravensdale</p>
+			<p>Drogheda</p>
+		</p>
+
+		
+		
+		<a href="https://www.google.com/maps/place/Poo+Poo+Point/@47.4995296,-122.0173277,15z/data=!3m1!4b1!4m5!3m4!1s0x549065ac62cb0b95:0x3432ea90a57ee8cb!8m2!3d47.4995159!4d-122.0085729">
+			<div class="maplink">
+			<img src="./images/maps_logo.png" alt="Google Maps">
+				Google Maps
+				</div>
+		</a>
+		
+		
+		
+</div>
+			
+	
+	
+
+	
+</div>	
+	
+	<footer id="footer">
+	
+	<p>Jake Black, Copright &copy; 2019</p>
+	<a href="#top">Return to top of page</a>
+	<!--Here I have linked back to the anchor at the top of my page, this will allow the user to return to the top from the bottom of the page-->
+	
+	</footer>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><!--Linkking jquery for burger menu-->
+<script src="./javascript/responsive.js"></script><!--Linking to external javascript file-->
+<!--We place these links at the end of the file as it helps the page to load faster-->
+
+	</div>
+</div>
+</body>
+
+
+</html>	
+	
+	
