@@ -4,6 +4,7 @@
   margin:0;
   padding:0;
   font-family:Arial,Helvetica,sans-serif;
+  
 }
 
 /*Here I'm saying I want no margin or padding. This is because some elements have margin or padding by default, such as a h1.
@@ -14,7 +15,15 @@
   color:#ffffff;/*White*/
   text-align:center;
   
+  
+  
   /*Making my background colour black and my text white and aligned to the centre*/
+}
+
+
+#branding img{
+		max-height:35px;
+		max-width:35px;
 }
 
 .highlight{
@@ -33,6 +42,7 @@ a{
   list-style:none;/*Removes the bulletpoints from the links*/
   background-color:#000;/*Black*/
   text-transform:uppercase; /*This will make my text uppercase*/
+
   
 }
 
@@ -202,15 +212,19 @@ input.txt {
 	border: 1px solid #00008B;
 	width:90%;
 	height:40px;
+	border-radius:15px;
+	
 	}
 	
 input.btn {
 	color: #00008B;
 	background-color: #ADD8E6;
 	border: 1px solid #00008B;
-	margin-left:6%;
+	margin-left:7%;
 	height:25px;
 	width:80%;
+	border-radius:15px;
+	
 	
 	}
 
@@ -245,12 +259,14 @@ table{
 	text-align:center;
 	margin-right:8%;
 	
+	
 }
 
 tr, td{
 	border:1px solid #00008B;
 	height:40px;
 	width:50%;
+	
 	
 	}
 	
@@ -282,6 +298,8 @@ tr, td{
 	display:inline block;
 	margin-left:30%;
 	margin-bottom:2%;
+	border-radius:15px;
+	
 	
 	
 	
@@ -332,7 +350,12 @@ tr, td{
 
 iframe{
 	width:100%;
+	
+	
 }
+
+
+
 	
 @media only screen and (min-width:1025px){/*My CSS so far was written based on how I'd like the mobile version to appear.
 											 Here I use media queries to apply different styling to screens 1025px wide or above. 1025px is the
@@ -419,7 +442,7 @@ input.txt{
 
 input.btn{
 	width:40%;
-	margin-left:3.65%;
+	margin-left:6%;
 	margin-bottom:5%
 }
 
@@ -482,7 +505,7 @@ tr{
 	float:left;
 
 	margin-left:9%;
-	max-width:90%;
+	max-width:75%;
 	margin-bottom:5%;
 	
 	
@@ -490,6 +513,7 @@ tr{
 
 iframe{
 	width:120%;
+	
 }
 	
 .contact{
