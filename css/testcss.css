@@ -102,11 +102,13 @@ ul.topnav.responsive li{display:block;} /*class added via jQuery*/
   color:#ffffff;/*White*/
   padding-top:2px;
   padding-bottom:2px;
+  border-radius:15px;
  
 }
 
 input{
-  height:18px/*Increasing the height of my email address input box*/
+  height:18px;/*Increasing the height of my email address input box*/
+  border-radius:15px;
 }
 
 .box img{
@@ -317,7 +319,7 @@ tr, td{
 }
 
 .contactmore{
-	margin-right:5%;
+	margin-right:8%;
 	text-align:center;
 
 }
@@ -447,7 +449,7 @@ input.btn{
 }
 
 .contactinfo{
-	float:right;
+	float:left;
 	margin-top:3.65%;
 	width:50%;
 
@@ -465,9 +467,9 @@ tr{
 }
 
 .contactmore{
-	float:right;
-	margin-right:5%;
+	float:left;
 	margin-top:2.5%;
+	margin-left:40%;
 }
 
 	
@@ -477,7 +479,7 @@ tr{
 }
 
 .contactelement{
-		margin-bottom:20%;
+		margin-bottom:22%;
 }
 
 .maplink{
