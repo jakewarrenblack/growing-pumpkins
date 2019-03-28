@@ -6,8 +6,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content ="width=device-width, initial-scale=1">
 	<meta name="author" content="Jake Black">
-
-	<title>Growing Pumpkins | Welcome</title>
+	<meta name="description" content="Give Your Pumpkins a Headstart with my Free and Comprehensive Guide.">
+	<meta name="keywords" content="gardening,pumpkins,growing,harvesting,preparing,recipes">
+	
+	<meta name="robots" content="index, follow" /> <!-- I add this because I want the browser's crawlers to index this page,
+	as it contains relevant context.-->
+	
+	<title>Growing Pumpkins | Home Growing Advice Tailored to the Irish Climate.</title>
 	
 	<!--Here we're linking our CSS stylesheet-->
 	<link rel="stylesheet" href="./css/testcss.css">
@@ -25,8 +30,31 @@
 		<!--We'll be using this multiple times to consolidate everything and push it too a certain width etc-->
 		<div class="container">
 			
+			
+			
+			
+			
+
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<div id="branding"> <!--We use an ID here because the branding will only appear once-->
-				<h1><span class="highlight">Growing</span>Pumpkins</h1> <img src="./images/pumpkin.png"> <!--Span is inline, a div would make it growing go on its own line which we don't want-->
+				<h1><span class="highlight">Growing</span>Pumpkins</h1> <img src="./images/pumpkin.png" alt="A cartoon pumpkin"> <!--Span is inline, a div would make it growing go on its own line which we don't want-->
 			</div>
 				
 			
@@ -40,7 +68,20 @@
 						<li class="hide"><a href="contact.html">Get in Touch</a></li>
 					</ul>
 				
-					
+						<button class="open-button" onclick="openForm()">Chat</button> <!--Here 'onclick' runs the function 'openForm' which I have created in JavaScript-->
+
+<div class="chat-popup" id="myForm">
+  <form action="#" class="form-container"> <!--Here my form action would usually go to a PHP file, but I don't have one, so I have used '#' to create a dead link-->
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="How can we help?..." name="msg" required></textarea> <!--Here I set a placeholder for my text box, and set this as a required section. The user cannot
+																				submit the form until this box has been filled-->
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button><!--Here onclick causes the function 'closeForm' to be run, which closes the chat box.-->
+  </form>
+</div>	
 				
 					</nav>
 		</div>
@@ -64,8 +105,11 @@
 			<form> <!--This defines a form that is used to collect user input,
 						we can input many types of info, depending on what we set the info type as
 						in this case email, but we could just use text-->
-				<input type="email" placeholder="Enter Email..."/>
+				<label for="subscribe_id" class="visuallyhidden">Enter Email...</label>
+				<input type="email" id="subscribe_id" placeholder="Enter Email..."/>
 				<!--This defines a button for submitting the form data, this usually goes to a handler in php-->
+				<!--Just as I have on the contact page, I have given the label a class of visually hidden which I will hide without
+				actually removing it so the screenreader can still interpret it.-->
 				<button type="submit" class="button_1">Subscribe</button>
 			</form>
 		</div>
@@ -77,7 +121,7 @@
 		
 			<div class="box">
 				<figure>
-				<a href="./cultivation.html"><img src="./images/cultivation.png" alt="Cultivation"></a>
+				<a href="./cultivation.html"><img src="./images/cultivation.png" alt="A man digging a pumpkin patch."></a>
 				
 				<figcaption>Fig.1 - Digging a patch.</figcaption>
 				
@@ -90,7 +134,7 @@
 			
 			<div class="box">
 			<figure>
-			<a href="./harvesting.html"><img src="./images/harvesting.png" alt="Harvesting"></a>
+			<a href="./harvesting.html"><img src="./images/harvesting.png" alt="A man cutting pumpkin from their vine."></a>
 				
 				<figcaption>Fig.2 - Harvesting pumpkins.</figcaption>
 				
@@ -103,7 +147,7 @@
 			
 			<div class="box">
 			<figure>
-			<a href="./preparation.html"><img src="./images/preparation.png" alt="Preparation"></a>
+			<a href="./preparation.html"><img src="./images/preparation.png" alt="A bowl of pumpkin soup."></a>
 				
 				<figcaption>Fig.3 - Pumpkin soup.</figcaption>
 				
@@ -121,6 +165,8 @@
 	<p>Jake Black, Copright &copy; 2019</p>
 	<a href="#top">Return to top of page</a>
 	<!--Here I have linked back to the anchor at the top of my page, this will allow the user to return to the top from the bottom of the page-->
+	
+
 	
 	</footer>
 	

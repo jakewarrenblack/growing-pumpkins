@@ -6,108 +6,14 @@
   font-family:Arial,Helvetica,sans-serif;
   scroll-behavior: smooth; /*When the user clicks the 'return to top' button I would like the scroll back to the top
 	of the page to be smooth*/
-  }
+  
+}
 
 /*Here I'm saying I want no margin or padding. This is because some elements have margin or padding by default, such as a h1.
-  I'm also setting the font family to arial, and then helvetica and sans serif as backups.*/
-
-
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    width: 20%;
-    border-radius: 20px;
-
-}
-
-/* The popup chat - hidden by default */
-.chat-popup {
-  display: none; /*Means this is not displayed by default. This is changed using onclick in the html and style.display in the JavaScript.*/
-  position: fixed; /*This keeps the popup window in the same place.*/
-  bottom: 0; /*Bottom, right, top, and left are used to position fixed elements. In this case I use bottom to ensure the window does not move from the bottom of the viewport.*/
-  z-index: 9; /*The z-index positions the popup window above all elements with a lower z-index.*/
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 310px;
-  padding: 10px;
-  background-color: white;
-  border-radius:25px 25px 0px 0px;
-}
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
-  border-radius:25px 25px 25px 25px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
+	I'm also setting the font family to arial, and then helvetica and sans serif as backups.*/
 
 
 
-
-
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
 
 #branding{
@@ -166,13 +72,10 @@ ul.topnav li a {
 display: block; /* convert inline element a to block element, so it won't show up in a horizontal line*/
 }
 
-ul.topnav li.hide{
-	display:none;
-} /*This will hide everything except for our menu icon*/
+ul.topnav li.hide
+{display:none;} /*This will hide everything except for our menu icon*/
 
-ul.topnav.responsive li{
-	display:block;
-} /*class added via jQuery*/
+ul.topnav.responsive li{display:block;} /*class added via jQuery*/
 /*This corresponds to our javascript*/
 
 
@@ -205,7 +108,7 @@ ul.topnav.responsive li{
   color:#ffffff;/*White*/
   padding-top:2px;
   padding-bottom:2px;
-  border-radius:15px; /*This gives my button rounded corners*/
+  border-radius:15px;
  
 }
 
@@ -222,7 +125,7 @@ input{
 }
 
 .box{
-  text-align:center; /*Centres the text beneath my images*/
+  text-align:center;
 }
 
 body{
@@ -248,16 +151,22 @@ footer{
 
 #construction, img{
 	width:100%;
+	
+	position:center;
     text-align:center;
-	height:50%; /*I want my construction image to cover the entire page, with text aligned to the centre*/
+	height:50%;
 	
 }	
 	
 /*contact page CSS starting here*/
 
-/*Here I have applied a class of 'visuallyhidden' to my labels. I have added a rectangular clip of size 0x0x0x0 around them so they
-don't appear on the page, but the screen reader can still interpret them. This satisfies accessibility requirements.*/
-
+#form{
+	color:black;
+	
+	
+	
+	
+}
 
 .visuallyhidden{
   position: absolute; /*Position absolute means other elements will behave as if this element has been removed completely from the webpage*/
@@ -277,7 +186,7 @@ don't appear on the page, but the screen reader can still interpret them. This s
 }
 	
 fieldset{
-	border:0; 
+	border:0;
 	
 	
 	
@@ -286,10 +195,21 @@ fieldset{
 legend{
 	padding:0;
 	color:#00f /*Blue*/;
-
+	
+	
 }
 
 
+
+	
+
+	
+form div label{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	}
+	
 fieldset {
 	margin-top: 1.4em; /*space outside top of fieldset */
 	padding: 0.6em; /*space inside fieldset*/
@@ -300,28 +220,28 @@ fieldset {
 legend {
 	font-size: 1.2em;
 	font-weight:bold;
-	color:#000000; /*Black*/
+	color:#000000;
 	
 	}
 	
 input.txt {
 	color:#00008B; /*blue navy*/
-	background-color: #E3F2F7; /*very light blue-white*/
-	border: 1px solid #00008B; /*Dark blue*/
+	background-color: #E3F2F7; /*light blue*/
+	border: 1px solid #00008B;
 	width:90%;
 	height:40px;
-	border-radius:15px; /*Gives the input round edges*/
+	border-radius:15px;
 	
 	}
 	
 input.btn {
-	color: #00008B; /*Dark blue*/
-	background-color: #ADD8E6 /*very light blue-white*/;
+	color: #00008B;
+	background-color: #ADD8E6 /*Light blue*/;
 	border: 1px solid #00008B /*Dark blue*/;
 	margin-left:7%;
 	height:25px;
 	width:80%;
-	border-radius:15px; /*Gives the input round edges*/
+	border-radius:15px;
 	
 	
 	}
@@ -393,9 +313,10 @@ tr, td{
 	font-size:1.1em;
 	border:1px solid #000000; /*Black*/;
 	margin-top:5%;
+	display:inline block;
 	margin-left:30%;
 	margin-bottom:2%;
-	border-radius:15px; /*Gives the button round edges*/
+	border-radius:15px;
 	
 	
 	
@@ -423,24 +344,10 @@ tr, td{
 	
 .pagecontain{
 	margin-left:5%;
-	
 }
 
-/*fix for footer issue*/
 
-.content{
-	min-height:calc(100vh - 100px); /*The content of the page, other than the footer, is contained
-										within this content div. I subtract 100px from the viewport height					
-										to subtract the height of the footer and the margin-bottom of the		
-										element above it to keep the footer at the bottom of the page.*/
-}
 
-/*end of fix*/
-
-.footer{
-	height:50px;
-}
-	
 
 	
 /*Harvesting Page CSS*/
@@ -469,11 +376,10 @@ iframe{
 
 .transcript_text{
 	
-	line-height:1.5em; /*There's a lot of text here, so I've increased the line height to make it easier to read.*/
-	text-align:left;
-	margin-left:5%;
+	text-align:center;
+	margin-left:1%;
+	margin-right:1%;
 	margin-top:5%;
-	max-width:90%; /*I don't want the text to take up too much of the screen*/
 }
 
 	
@@ -549,12 +455,10 @@ ul.topnav li.icon {
 
 #form{
 		float:left;
-		width:20%; /*Floats this to the left so my 'contactinfo' will appear to its right.*/
+		width:20%;
 }
 
-h1.formheader{
-	margin-bottom:2%;
-}
+
 
 input.txt{
 	width:200%;
@@ -569,7 +473,7 @@ input.btn{
 }
 
 .contactinfo{
-	float:left; /*This float means my contact info appears to the right of my contact form.*/
+	float:left;
 	margin-top:3.65%;
 	width:50%;
 
@@ -618,45 +522,36 @@ tr{
 	line-height:2em;
 }
 
-table.contact{
-	float:left;
-	width:80%;
-}
-
 .cutting{
 	margin-left:2%;
 	margin-bottom:5%;
+}
+	
+.video{
 	float:left;
-	width:40%;
 
-}
-
-.video{	
-clear:right; /*This makes my videos appear in a horizontal row of three.*/
-float:left;
-width:20%;
-margin-left:9%
+	margin-left:9%;
+	max-width:75%;
+	margin-bottom:1%;
 	
 	
 }
-	
-	
-	
 
 iframe{
 	width:120%;
-	border:0px;
 	
 }
 	
-
+.contact{
+		margin-top:3%;
+}
 	
 	
 /*Transcripts*/
 	
 	.transcript{
 		clear:both;
-		margin-left:48%;
+		margin-left:46%;
 		padding:0;
 		color:#000000;
 	}

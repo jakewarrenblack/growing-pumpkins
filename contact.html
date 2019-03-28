@@ -6,8 +6,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content ="width=device-width, initial-scale=1">
 	<meta name="author" content="Jake Black">
-
-	<title>Growing Pumpkins | Contact</title>
+	<meta name="description" content="Get in touch with us.">
+	<meta name="robots" content="index, follow" /> <!-- I add this because I want the browser's crawlers to index this page,
+	as it contains relevant context.-->
+	
+	<title>Growing Pumpkins | Contact Us</title>
 	
 	<!--Here we're linking our CSS stylesheet-->
 	<link rel="stylesheet" href="./css/testcss.css">
@@ -16,9 +19,10 @@
 </head>
 
 <body>
-<div id="page-container">
-	<div id="content-wrap">
+<div id="page-container"> <!--I had an issue with the page content spilling outside the viewport on mobile, so I wrapped the entire
+page in this container and gave it a max-width of 100% to prevent this-->
 
+<div class="content">
 
 <a id="top"></a><!--Here I've added an anchor to which I can add a 'back to top' link in the footer-->
 
@@ -50,7 +54,7 @@
 	
 	</header>
 	
-<body>
+
 
 <h1 class="formheader">Want to get in touch?</h1>
 
@@ -59,7 +63,7 @@
 <div id="form">
 
 
-<form method="post" action"somescript.php" autocomplete="on">
+<form method="post" action="somescript.php" autocomplete="on">
 <!--NOTE This script won't work as it does not exist -->
 
 
@@ -71,21 +75,29 @@
 
 <div class="input">
 
-	<input type="text" name"firstname" id="firstname_id" class="txt" placeholder="First name">
+	
+	<label for="firstname_id" class="visuallyhidden">First Name</label>
+	<input type="text" name="firstname" id="firstname_id" class="txt" placeholder="First name">
 
 </div>
 	
 	<div class="forminput">
 
-	<input type="text" name="surname" id="surname_id" class="txt" placeholder="Surname">
+	
+		<label for="surname_id" class="visuallyhidden">Surname</label>
+		<input type="text" name="surname" id="surname_id" class="txt" placeholder="Surname">
 
 	</div>
 
 	<div class="forminput">
 	
-	<input type="email" name="email" id="email_id" class="txt" placeholder="Email">
+	
+		<label for="email_id" class="visuallyhidden">Email</label>
+		<input type="email" name="email" id="email_id" class="txt" placeholder="Email">
 	
 	</div>
+	
+</div>	
 
 </fieldset>
 
@@ -95,26 +107,26 @@
 
 
 
-
-<input type="text" name"address1" id="address1_id" class="txt" placeholder="Address 1">
+<label for="address1_id" class="visuallyhidden">Address 1</label>
+<input type="text" name="address1" id="address1_id" class="txt" placeholder="Address 1">
 	
 
 
 
-
-<input type="text" name"address2" id"address2_id" class="txt" placeholder="Address 2">
-
-
-
-
-
-<input type="text" name="city" id"city_id" class="txt" placeholder="City">
+<label for="address2_id" class="visuallyhidden">Address 2</label>
+<input type="text" name="address2" id="address2_id" class="txt" placeholder="Address 2">
 
 
 
 
+<label for="city_id" class="visuallyhidden">City</label>
+<input type="text" name="city" id="city_id" class="txt" placeholder="City">
 
-<input type="text" name"postcode" id"postcode_id" class="txt" placeholder="Postcode">
+
+
+
+<label for="postcode_id" class="visuallyhidden">Postcode</label>
+<input type="text" name="postcode" id="postcode_id" class="txt" placeholder="Postcode">
 
 
 
@@ -123,6 +135,7 @@
 </form>
 
 <div>
+<label for="btnSubmit" class="visuallyhidden">Submit</label>	
 <input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"
 class="btn"></div>
 
@@ -133,27 +146,27 @@ class="btn"></div>
 <div class="contactmore">
 	
 <div class="contactelement">
-	<h1>Call</h1>
+	<h2>Call</h2>
 		<p>085 111 1111</p>
 		<p>(01) 111 1111</p>
 	</div>
 
 <div class="contactelement">		
-	<h1>Email</h1>
+	<h2>Email</h2>
 		<p>info@growingpumpkins.ie</p>
 	</div>
 	
 
-	<h1>Visit</h1>
+	<h2>Visit</h2>
 		<p>Pumpkin Co</p>
 		<p>	North Circular Road</p>
 			<p>Swan's Nest</p>
 			<p>Ravensdale</p>
 			<p>Drogheda</p>
-		</p>
+		
 
 		
-		<a href="https://www.google.com/maps/place/Poo+Poo+Point/@47.4995296,-122.0173277,15z/data=!3m1!4b1!4m5!3m4!1s0x549065ac62cb0b95:0x3432ea90a57ee8cb!8m2!3d47.4995159!4d-122.0085729">
+		<a href="https://www.google.com/maps/place/Blackrock+Further+Education+Institute+-+BFEI/@53.3009239,-6.1780232,17z/data=!3m1!4b1!4m5!3m4!1s0x486708c0ca253e19:0x45f7f0c7b36b9cbc!8m2!3d53.3009207!4d-6.1758345">
 			<div class="maplink">
 			<img src="./images/maps_logo.png" alt="Google Maps">
 				Google Maps
@@ -165,10 +178,9 @@ class="btn"></div>
 </div>
 			
 	
+</div>
 	
-
-	
-</div>	
+</div>
 	
 	<footer id="footer">
 	
@@ -182,8 +194,8 @@ class="btn"></div>
 <script src="./javascript/responsive.js"></script><!--Linking to external javascript file-->
 <!--We place these links at the end of the file as it helps the page to load faster-->
 
-	</div>
-</div>
+
+
 </body>
 
 
