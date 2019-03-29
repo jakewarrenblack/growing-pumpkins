@@ -4,111 +4,97 @@
   margin:0;
   padding:0;
   font-family:Arial,Helvetica,sans-serif;
-  scroll-behavior: smooth; /*When the user clicks the 'return to top' button I would like the scroll back to the top
-	of the page to be smooth*/
+  scroll-behavior: smooth;/*When the user clicks the 'return to top' button I would like the scroll back to the top
+							of the page to be smooth*/
+							
+  box-sizing: border-box;/*This means width and height will apply to all parts of an element, including content, padding, and borders.*/
   }
 
 /*Here I'm saying I want no margin or padding. This is because some elements have margin or padding by default, such as a h1.
   I'm also setting the font family to arial, and then helvetica and sans serif as backups.*/
 
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
-/* Button used to open the chat form - fixed at the bottom of the page */
+/*Chat box CSS starting here*/ 
+
 .open-button {
-background-color: #555;
-    color: white;
-    padding: 16px 20px;
+background-color: #fff; /*White*/
+    color: 000; /*Black*/
+    padding: 18px ;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /*Turns the cursor into a pointer when hovered over the button*/
     opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    width: 20%;
-    border-radius: 20px;
+    position: fixed; /*Position is relative to the viewport. Will always stay in the same place even when the page is scrolled.*/
+    bottom: 15px; /*Move button 23px from the bottom of the viewport.*/
+    width: 30%;
+    border-radius: 0px 20px 20px 0px; /*Rounded edges.*/
+	font-weight:bold;
+	
 
 }
 
-/* The popup chat - hidden by default */
 .chat-popup {
   display: none; /*Means this is not displayed by default. This is changed using onclick in the html and style.display in the JavaScript.*/
-  position: fixed; /*This keeps the popup window in the same place.*/
-  bottom: 0; /*Bottom, right, top, and left are used to position fixed elements. In this case I use bottom to ensure the window does not move from the bottom of the viewport.*/
+ 
+ position: fixed; /*This keeps the popup window in the same place.*/
+ 
+ bottom: 0; /*Bottom, right, top, and left are used to position fixed elements. In this case I use bottom to ensure the window does not move from the bottom of the viewport.*/
+  
   z-index: 9; /*The z-index positions the popup window above all elements with a lower z-index.*/
-}
+  
+  resize:none; /*Stops this element from being resizable for the user*/
+ }
 
-/* Add styles to the form container */
+
 .form-container {
-  max-width: 310px;
+  max-width: 320px;
+  width:100%;
   padding: 10px;
-  background-color: white;
+  background-color: #fff; /*White*/
   border-radius:25px 25px 0px 0px;
+  resize:none; 
 }
 
-/* Full-width textarea */
+
 .form-container textarea {
   width: 100%;
+  max-width:300px;
   padding: 15px;
-  margin: 5px 0 22px 0;
   border: none;
+  margin: 5px 0 22px 0;
   background: #f1f1f1;
   resize: none;
   min-height: 200px;
   border-radius:25px 25px 25px 25px;
 }
 
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-
-
-
-
 .form-container .btn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4CAF50; /*Light green*/
+  color: #fff; /*White*/
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  border-radius:25px 25px 25px 25px;
 }
 
-/* Add a red background color to the cancel button */
+
 .form-container .cancel {
-  background-color: red;
+  background-color: #f7850a; /*Light orange*/
+  border-radius:25px 25px 25px 25px;
 }
 
-/* Add some hover effects to buttons */
+
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+  opacity: 1; /*This changes the opacity from 0.8 to 1.0 when the cursor is hovered over these elements.*/
 }
   
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+/*End of chat box CSS.*/
 
 #branding{
  background-color:#000/*Black*/;
@@ -294,6 +280,7 @@ fieldset {
 	margin-top: 1.4em; /*space outside top of fieldset */
 	padding: 0.6em; /*space inside fieldset*/
 	
+	
 	max-width:90%;
 	}
 	
@@ -311,6 +298,7 @@ input.txt {
 	width:90%;
 	height:40px;
 	border-radius:15px; /*Gives the input round edges*/
+	margin-bottom:1%;
 	
 	}
 	
@@ -318,9 +306,9 @@ input.btn {
 	color: #00008B; /*Dark blue*/
 	background-color: #ADD8E6 /*very light blue-white*/;
 	border: 1px solid #00008B /*Dark blue*/;
-	margin-left:7%;
+	margin-left:6%;
 	height:25px;
-	width:80%;
+	width:75%;
 	border-radius:15px; /*Gives the input round edges*/
 	
 	
@@ -435,6 +423,15 @@ tr, td{
 										element above it to keep the footer at the bottom of the page.*/
 }
 
+
+.content_construction{
+	min-height:calc(100vh - 60px);
+}
+
+
+
+
+
 /*end of fix*/
 
 .footer{
@@ -543,7 +540,15 @@ ul.topnav li.icon {
 		padding:10px;
 	}
 	
+/*Chat box media queries*/
 
+.open-button{
+	width:20%;
+}
+	
+	
+	
+	
 	
 /*Media Queries for Contact Page*/
 

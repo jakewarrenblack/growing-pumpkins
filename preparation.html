@@ -20,6 +20,8 @@
 
 <body>
 
+<div class="content_construction">
+
 <a id="top"></a><!--Here I've added an anchor to which I can add a 'back to top' link in the footer-->
 
 	<!--Header represents a container for introductory content or a set of nav links, usually contains headings or a logo-->
@@ -48,7 +50,53 @@
 					</nav>
 		</div>
 	
+<!--Live Chat Box-->	
+		
+						<button class="open-button" onclick="openForm()">Live Chat</button> <!--Here 'onclick' runs the function 'openForm' which I have created in JavaScript-->
+
+<div class="chat-popup" id="myForm">
+  
+  <form action="#" class="form-container"> <!--Here my form action would usually go to a PHP file, but I don't have one, so I have used '#' to create a dead link-->
+  
+	<h1>Live Chat</h1>
+
+		<label for="msg_id" class="visuallyhidden">Message</label>
+		<textarea placeholder="How can we help?..." id="msg_id" required></textarea> <!--Here I set a placeholder for my text box, and set this as a required section. The user cannot
+																				submit the form until this box has been filled-->
+		
+		<label for="chat_submit" class="visuallyhidden">Message</label>
+		<button type="submit" id="chat_submit" class="btn">Send</button>
+    
+	
+		<label for="chat_close" class="visuallyhidden">Message</label>
+		<button type="button" id="chat_close" class="btn cancel" onclick="closeForm()">Close</button><!--Here onclick causes the function 'closeForm' to be run, which closes the chat box.-->
+   
+ <!--I've used a class of visually hidden to maintain the use of labels for the screenreader without affecting the aesthetic of my design.-->
+
+
+  </form>
+
+</div>			
+		
+<!--End of Live Chat Box-->			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	</header>
+	
+	
+
+	
 	
 
 
@@ -60,6 +108,8 @@
 
 </div>
 
+</div>	
+	
 	<footer>
 	
 	<p>Jake Black, Copright &copy; 2019</p>
